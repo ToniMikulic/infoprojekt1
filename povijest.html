@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Znamenitosti Zagreba</title>
+    <link href="styles.css" rel="stylesheet" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand -->
+        <ul class="navbar-nav" href="#">
+            <li class="nav-item">
+                <a href="index.html">
+                <img src="https://seeklogo.com/images/G/Grad_Zagreb-logo-C938C47B15-seeklogo.com.png" id="logo">
+                </a>
+            </li>
+        </ul>
+    
+      
+        <!-- Links -->
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="znamenitosti.html">Znamenitosti</a>
+            </li>
+                <li class="nav-item">
+                <a class="nav-link" href="povijest.html">Povijest</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="zanimljivosti.html">Zanimljivosti</a>
+            </li>
+        
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Više
+                </a>
+                <div class="dropdown-menu">
+                <a class="dropdown-item" href="https://www.google.com/maps?q=zagreb+maps&um=1&ie=UTF-8&sa=X&ved=2ahUKEwi_q5XmysbxAhU6gf0HHR_MCvQQ_AUoAXoECAEQAw">Karta</a>
+                <a class="dropdown-item" href="http://www.mgz.hr/hr/">Muzeji</a>
+                <a class="dropdown-item" href="https://hr.wikipedia.org/wiki/Zagreb">Wikipedija</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="okviri" class="container">
+        <div class="row">
+            <div class="col-lg-6" style="padding: 2%;">
+                <h1>Kratka povijest Zagreba</h1>
+                <p style="text-align: justify;">
+                    Današnji Zagreb izrastao je iz dvaju srednjovjekovnih naselja koja su se stoljećima razvijala na dvama susjednim brežuljcima. Prvi pisani spomen Zagreba datira iz 1094. godine kada je na Kaptolu osnovana biskupija, dok susjedni Gradec 1242. godine biva proglašen slobodnim kraljevskim gradom. Oba ta naselja bila su okružena čvrstim bedemima i kulama, ostaci kojih su očuvani sve do danas.
+
+ 
+                Za turskih najezda na Europu, od XIV. do XVIII. stoljeća, Zagreb je važna pogranična utvrda. Barokna obnova grada u XVII. i XVIII. stoljeću mijenja obličje Gradeca i Kaptola. Ruše se stare drvene kuće a podižu raskošne palače, samostani i crkve. Bogatstvu grada pridonose brojni trgovački sajmovi, prihodi od posjeda i mnoštvo obrtničkih radionica.
+                U grad doseljavaju imućne plemićke obitelji, kraljevi službenici, crkveni velikodostojnici i bogati trgovci iz cijele Europe. Otvaraju se škole i bolnice, prihvaćaju se kulturni običaji europskih prijestolnica.
+
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <img class="hist" src="https://2img.net/h/www.hrsvijet.net/images/stories/mjesta/zagreb%20gradec%20i%20kaptol.jpg">
+            </div>
+            <div class="col-lg-12" style="text-align: justify;padding: 2%;">
+                <p> Grad prerasta svoje srednjovjekovne granice i širi se prostranom ravnicom. Podižu se prvi perivoji i ladanjska imanja. Zagreb se potvrduje kao upravno, gospodarsko i kulturno središte Hrvatske.
+
+                    Administrativnim ujedinjenjem Kaptola, Gradeca i okolnih naselja u jedinstveni grad Zagreb 1850. godine, njegov se razvoj još više ubrzava. Razorni potres iz 1880. godine pokrenuo je obnovu i modernizaciju mnogih dotrajalih četvrti i građevina. Podižu se reprezentativne javne zgrade, uređuju parkovi i fontane, organizira se javni prijevoz i komunalne usluge.
+                    
+                    U XIX. stoljeću broj se stanovnika udeseterostručuje. Dvadeseto stoljeće donosi u Zagreb duh secesije. Grad živi u obilju građanskog društva, čvrsto povezan s tadašnjim europskim središtima kulture, umjetnosti i znanosti. S rastom bogatstva i industrije, grad se od 60-tih godina naglo širi prostranom ravnicom uz rijeku Savu gdje niče suvremeni poslovni grad, spreman za izazove trećega tisućljeća.
+                </p>
+            </div>
+        </div>
+        
+    </div>
+    <div id="okviri" class="container"  style="padding: 2%;">
+        <h1>Pregled značajnih događaja</h1>       
+        <table class="table" >
+          <thead>
+            <tr>
+              <th>Godina</th>
+              <th>Događaj</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="red">
+              <td>oko 600. n.e.</td>
+              <td>Propada staro rimsko naselje Šćitarjevo (Andautonia). Na ove prostore dolaze Hrvati, a najstariji su dokazi o njihovom boravku grobovi na Visokom brijegu u Velikoj Gorici.</td>
+            </tr>
+            <tr id="red">
+              <td>879.</td>
+              <td>Zemlje izmedu Save i Drave, pa dakle i područje Zagreba, ulaze u okvir hrvatske države kralja Tomislava, koji je 925. godine okrunjen za prvoga hrvatskog kralja.</td>
+            </tr>
+            <tr id="red">
+              <td>1094.</td>
+              <td>Ugarski kralj Ladislav osniva biskupiju.</td>
+            </tr>
+            <tr id="red">
+                <td>1134.</td>
+                <td>Izdana je pismena povelja u kojoj se spominju utemeljitelj biskupije kralj Ladislav, prvi zagrebački biskup Duh i ostalo svećenstvo.</td>
+            </tr>
+            <tr id="red">
+                <td>1217.</td>
+                <td>	Završena je gradnja i posvećena stolna crkva, koja je 1242. godine teško stradala za provale Tatara.
+                </td>
+            </tr>
+            <tr id="red">
+                <td>1242.</td>
+                <td>Da bi se građanima odužio za pomoć koju su mu pružili pred naletomTatara, hrvatsko-ugarski kralj Bela IV tadašnjem Gradecu dodjeljuje Zlatnu bulu.
+                </td>
+            </tr>
+            <tr id="red">
+                <td>1355.</td>
+                <td>Spominje se prva ljekarna u Zagrebu.
+                </td>
+            </tr>
+            <tr id="red">
+                <td>1557.</td>
+                <td>Grad je ponovno u opasnosti, sada mu prijete Turci. Ali, baš se te godine prvi puta spominje kao glavni grad.
+                </td>
+            </tr>
+            <tr id="red">
+                <td>1607.</td>
+                <td>Osnovana je Isusovačka gimnazija sa šest razreda.
+                </td>
+            </tr>
+            <tr id="red">
+                <td>1624.</td>
+                <td>Grom je zapalio drveni krov stolne crkve, a požar se proširio. Veliki požari izbili su još nekoliko puta, dok nisu prevladale kuće od opeke.
+                </td>
+            </tr>
+            <tr id="red">
+                <td>1664.</td>
+                <td>Isusovci osnivaju prvu tiskaru u Zagrebu.
+                </td>
+            </tr>
+            <tr id="red">
+                <td>1669.</td>
+                <td>Hrvatsko-ugarski kralj Leopold I. poveljom potvrduje Kraljevskoj akademiji pravo da bude sveučilište.
+                </td>
+            </tr>
+            <tr id="red">
+                <td>1767.</td>
+                <td>Kraljevsko vijeće određuje Varaždin za svoje privremeno sjedište.
+                </td>
+            </tr>
+            <tr id="red">
+                <td>1771.</td>
+                <td>U Zagrebu počinje izlaziti prvi tjednik na latinskom jeziku Ephemerides Zagrebienses.
+                </td>
+            </tr>
+            <tr id="red">
+                <td>1776.</td>
+                <td>Sjedište vlade vraća se iz Varaždina u Zagreb.
+                </td>
+            </tr>
+            <tr id="red">
+                <td>1834.</td>
+                <td>Na južnoj strani Markova trga počinje s radom prvo stalno kazalište u Zagrebu.
+                </td>
+            </tr>
+            <tr id="red">
+                <td>1862.</td>
+                <td>	Otvorena prva željeznička pruga na relaciji Zidani Most-Zagreb-Sisak.
+                </td>
+            </tr>
+            <tr id="red">
+                <td>1880.</td>
+                <td>	U studenome grad je pogodio katastrofalan potres.
+                </td>
+            </tr>
+            <tr id="red">
+                <td>1891.</td>
+                <td>	Gradskim ulicama kreće tramvaj kojega vuku konji. Prvi električni tramvaj je u upotrebi od 1905.
+                </td>
+            </tr>
+            <tr id="red">
+                <td>1901.</td>
+                <td>Prvi automobil na gradskim ulicama.
+                </td>
+            </tr>
+            <tr id="red">
+                <td>1926.</td>
+                <td>	Oglasila se radiopostaja, prva u ovom dijelu Europe.
+                </td>
+            </tr>
+            <tr id="red">
+                <td>1956.</td>
+                <td>	Počinje emitiranje programa Zagrebačke televizije.
+                </td>
+            </tr>
+            <tr id="red">
+                <td>1957.</td>
+                <td>Počinje gradnja novih velikih stambenih naselja na južnoj obali Save.
+                </td>
+            </tr>
+            <tr id="red">
+                <td>1964.</td>
+                <td>	U noći od 24. na 25. listopada nabujala se Sava razlila gradom, te uništila i oštetila više tisuća kuća. Bila je to najteža poplava koju je Zagreb doživio.
+                </td>
+            </tr>
+            <tr id="red">
+                <td>1979.</td>
+                <td>Tramvajska je pruga premostila Savu.
+                </td>
+            </tr>
+            <tr id="red">
+                <td>1987.</td>
+                <td>	U Zagrebu je održana Univerzijada, velika svjetska sportska priredba.
+                </td>
+            </tr>
+            <tr id="red">
+                <td>1990.</td>
+                <td>	30. svibnja održano je prvo zasjedanje Sabora poslije višestranačkih izbora.
+                </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+        
+    
+
+  </body>
+</html>

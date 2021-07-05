@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Znamenitosti Zagreba</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+        <!-- Brand -->
+        <ul class="navbar-nav" href="#">
+            <li class="nav-item">
+                <a href="index.html">
+                <img src="https://seeklogo.com/images/G/Grad_Zagreb-logo-C938C47B15-seeklogo.com.png" id="logo">
+                </a>
+            </li>
+        </ul>
+      
+        <!-- Links -->
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="znamenitosti.html">Znamenitosti</a>
+            </li>
+                <li class="nav-item">
+                <a class="nav-link" href="historija.html">Povijest</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="zanimljivosti.html">Zanimljivosti</a>
+            </li>
+        
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Više
+                </a>
+                <div class="dropdown-menu">
+                <a class="dropdown-item" href="https://www.google.com/maps?q=zagreb+maps&um=1&ie=UTF-8&sa=X&ved=2ahUKEwi_q5XmysbxAhU6gf0HHR_MCvQQ_AUoAXoECAEQAw">Karta</a>
+                <a class="dropdown-item" href="http://www.mgz.hr/hr/">Muzeji</a>
+                <a class="dropdown-item" href="https://hr.wikipedia.org/wiki/Zagreb">Wikipedija</a>
+                </div>
+            </li>
+        </ul>
+        </nav>
+
+        
+        <div id="okviri" class="container">
+            <div class="row">
+                <a id="slika" class="col-lg-4" data-toggle="modal" data-target="#katedrala">
+                    <img src="https://www.rutmap.com/look/images/gallery/20181011224401-kat1.jpg" class="img-thumbnail" alt="#">
+                    <div class="centered">Zagrebačka katedrala</div>
+                </a>
+                <a id="slika" class="col-lg-4" data-toggle="modal" data-target="#crkva">
+                    <img src="https://smart-travel.hr/wp-content/uploads/2016/04/32515511_l-640x454.jpg" class="img-thumbnail" alt="#">
+                    <div class="centered">Crkva sv. Marka</div>
+                </a>
+                <a id="slika" class="col-lg-4" data-toggle="modal" data-target="#medv">
+                    <img src="http://www.visitadriatic.eu/wp-content/uploads/2015/09/ppmedvednica-960x500.jpg" class="img-thumbnail" alt="#">
+                    <div class="centered">Medvednica</div>
+                </a>
+                <a id="slika" class="col-lg-4" data-toggle="modal" data-target="#gg">
+                    <img src="https://zgportal.com/img/o-zagrebu/cetvrti-grada-zagreba/gornji-grad-medvescak-zagreb.jpg" class="img-thumbnail" alt="#">
+                    <div class="centered">Gornji Grad</div>
+                </a>
+                <a id="slika" class="col-lg-4" data-toggle="modal" data-target="#maksimir">
+                    <img src="https://mojerazglednice.com/wp-content/uploads/2018/04/maksimir-thumb.jpg" class="img-thumbnail" alt="#">
+                    <div class="centered">Park Maksimir</div>
+                </a>
+                <a id="slika" class="col-lg-4" data-toggle="modal" data-target="#tunel">
+                    <img src="http://www.journal.hr/wp-content/uploads/2016/12/lice-grada-tunel-gric-1.jpg" class="img-thumbnail" alt="#">
+                    <div class="centered">Tunel Grič</div>
+                </a>
+
+                <a id="slika2" class="col-lg-4" data-toggle="modal" data-target="#pmf">
+                    <img src="http://www.jetset-magazin.com/wp-content/uploads/2015/10/bot1-563x353.jpg" class="img-thumbnail" alt="#">
+                    <div class="centered">Botanički vrt PMF</div>
+                </a>
+
+                <a id="slika2" class="col-lg-4" data-toggle="modal" data-target="#mimar">
+                    <img src="https://www.infozagreb.hr/media/places/large_1@275@5cb83fa1226fc.jpg" class="img-thumbnail" alt="#">
+                    <div class="centered">Muzej mimara</div>
+                </a>
+
+                <a id="slika2" class="col-lg-4" data-toggle="modal" data-target="#vrt">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Maksimir_Zoo.jpg/220px-Maksimir_Zoo.jpg" class="img-thumbnail" alt="#">
+                    <div class="centered">Zoološki vrt</div>
+                </a>
+
+                <a id="slika2" class="col-lg-4" data-toggle="modal" data-target="#muzej">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Muzej_grada_Zagreba.jpg/800px-Muzej_grada_Zagreba.jpg" class="img-thumbnail" alt="#">
+                    <div class="centered">Muzej Grada Zagreba</div>
+                </a>
+
+                <a id="slika2" class="col-lg-4" data-toggle="modal" data-target="#muzej2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Museum_of_Arts_and_Crafts%2C_Zagreb.jpg" class="img-thumbnail" alt="#">
+                    <div class="centered">Muzej za umjetnost i obrt</div>
+                </a>
+
+                <a id="slika2" class="col-lg-4" data-toggle="modal" data-target="#muzej3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Arheolo%C5%A1ki_muzej_Zagreb.jpg/800px-Arheolo%C5%A1ki_muzej_Zagreb.jpg" class="img-thumbnail" alt="#">
+                    <div class="centered">Arheološki muzej</div>
+                </a>
+                
+
+
+
+                <div  class="col-lg-12">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" onclick="sakrijSlike(1)" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" onclick="sakrijSlike(2)" href="#">2</a></li>
+                    </ul>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <div class="modal" id="katedrala">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Zagrebačka katedrala</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="col-lg-12">
+                            <img src="https://www.rutmap.com/look/images/gallery/20181011224401-kat1.jpg" class="centriraj" alt="#">
+                            <p class="tekst">Katedrala Uznesenja Blažene Djevice Marije i svetih Stjepana i Ladislava ili Zagrebačka katedrala,↑b1  najveća je hrvatska sakralna građevina i jedan od najvrjednijih spomenika hrvatske kulturne baštine.[1] Prva je i najznačajnija gotička građevina Hrvatske.[2] Najmonumentalija je gotička sakralna građevina jugoistočno od Alpa.[3] Do potresa i rušenja tornjeva bila je visoka 105 metara, ali sada je visoka 92 metra.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+
+        <div class="modal" id="crkva">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Crkva sv. Marka</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="col-lg-12">
+                            <img src="https://smart-travel.hr/wp-content/uploads/2016/04/32515511_l-640x454.jpg" class="centriraj"alt="#">
+                            <p class="tekst">Crkva sv. Marka u Zagrebu jedna je od najstarijih zagrebačkih građevina, što potvrđuju romanički elementi nađeni na pročelju crkve. Što se tlocrtne dispozicije tiče, crkva sv. Marka trobrodna je dvoranska građevina s trolisnim zaključkom na istoku. Unutrašnjost crkve podijeljena je na brodove četirima masivnim oblim stupovima. U crkvu se može ući kroz zapadni i južni portal. Uz sjeveroistok crkve nalazi se zvonik kvadratne osnove. Zapadno od zvonika nalazi se sakristija, a do nje kapela sv. Fabijana i Sebastijana, u koju se može ući i s vanjske strane. Izgrađena je kao trobrodna dvoranska građevina u 14. stoljeću, kao gradečka župna crkva. Župa se spominje 1261. godine. Ima lijep portal, a prije je ispred njega bio stup srama, gdje su vezali ljude i izvršavali kazne koje je izrekao gradski sud. Prepoznatljiva je po raznobojnom zvoniku i krovu (A. Macetti i Machiedo), na kojem su grbovi grada Zagreba i grb Trojedne kraljevine Hrvatske, Slavonije i Dalmacije, baroknoj lukovici i skladnom južnom pročelju na kojem je figuralno najbogatiji gotički portal u Hrvatskoj.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+
+        <div class="modal" id="medv">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Zagrebačka katedrala</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="col-lg-12">
+                            <img src="http://www.visitadriatic.eu/wp-content/uploads/2015/09/ppmedvednica-960x500.jpg" class="centriraj"alt="#">
+                            <p class="tekst">Medvednica ili Zagrebačka gora je planina sjeverno od Zagreba. Sljeme, njezin najviši vrh (1033 m), je popularno izletničko mjesto do kojeg se može doći cestom ili pješice, planinareći.Od 1963. do 2007. do Sljemena je vozila turistička žičara.[2] Bilo Medvednice dugo je 42 km, a proteže se u smjeru sjeveroistok – jugozapad. Površina planine je pošumljena. Godine 1981. zapadni dio Medvednice proglašen je parkom prirode.[3]
+
+                                Na Sljemenu se nalazi skijaška staza koja je jedna od lokacija za utrke svjetskog skijaškog kupa (Snježna kraljica), a od siječnja 2005. održavaju utrke za Ženski svjetski skijaški kup. Skijalištem upravlja gradsko poduzeće "Sljeme – Medvednica" i postoje tri skijaške žičare: trosjedežnica i dvije vučnice – "sidra". Uređuju se staze za skijanje: Crveni, Bijeli, Zeleni i Plavi spust, te Bijela i Činovnička livada (Žuti spust se ne uređuje zbog prevelike strmine).
+                                
+                                Na Medvednici postoji i crkva Majke Božje Sljemenske Kraljice Hrvata.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+
+        <div class="modal" id="gg">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Gornji Grad</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="col-lg-12">
+                            <img src="https://zgportal.com/img/o-zagrebu/cetvrti-grada-zagreba/gornji-grad-medvescak-zagreb.jpg" class="centriraj"alt="#">
+                            <p class="tekst">Gornji grad – Medveščak tradicionalni je dio grada i gradska četvrt u samoupravnom ustrojstvu Grada Zagreba. Gradska četvrt osnovana je Statutom Grada Zagreba 14. prosinca 1999., i obuhvaća dio samog centra grada tj. Gornji grad, Kaptol i predjele sjeverno od njega (istočno i zapadno od ulice Medveščak).
+                                Po podacima iz 2011. površina četvrti je 10,13 km2, a broj stanovnika 30 962.
+
+                                    Četvrt obuhvaća, uz Gornji grad, razne predjele na obroncima Medvednice, kao što su Šalata i Tuškanac.
+
+                                    Pored kulturne i povijesne jezgre Gornjeg grada, u četvrti se nalazi niz parkova i park-šuma – Pantovčak, Zelengaj, Tuškanac, Jelenovac-Vrhovec, Orlovac i Remetski kamenjak.
+
+                                    U četvrti se nalazi i najpoznatije zagrebačko groblje, Mirogoj.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+
+        <div class="modal" id="maksimir">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Park Maksimir</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="col-lg-12">
+                            <img src="https://mojerazglednice.com/wp-content/uploads/2018/04/maksimir-thumb.jpg" class="centriraj"alt="#">
+                            <p class="tekst">Park-šuma Maksimir, prva u jugoistočnoj Europi, otvorena je 1794. godine na inicijativu biskupa Maksimilijana Vrhovca. Godine 1839. dao ju je urediti u engleskom pejzažnom stilu biskup Juraj Haulik. Arhitektonski objekti većinom su djela graditelja Franje Schüchta. U parku od 316 hektara[1] je očuvana flora i fauna nizinskih šuma, a u njemu se nalazi i pet jezera (što prirodnih, što umjetnih).
+
+                                Na južnom kraju park-šume nalazi se Zoološki vrt grada Zagreba.
+                                
+                                Ime parka nose i gradska četvrt koja obuhvaća teritorij obližnjih gradskih naselja, i stadion GNK Dinama.
+                                
+                                U parku Maksimiru raste hrast lužnjak poznat kao "Dedek", starosti oko 600 godina. Nalazi se u blizini Mogile.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+
+        <div class="modal" id="tunel">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Tunel Grič</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="col-lg-12">
+                            <img src="http://www.journal.hr/wp-content/uploads/2016/12/lice-grada-tunel-gric-1.jpg" class="centriraj"alt="#">
+                            <p class="tekst">Tunel Grič u Zagrebu je tunel ispod Gradeca (Griča) koji povezuje Mesničku i Radićevu ulicu, a okomito izlazi na tri mjesta u Ilici i jednom u Tomićevoj ulici prema jugu. Tunel je dugačak 350 metara, svojim većim dijelom širok je 3,2 metra dok je u središnjem dijelu širok 5,5 metara. Otvoren je za javnost u srpnju 2016. godine, iako je ranije bio otvoren kao sklonište za građane i mjesto kulturnih događanja tijekom Domovinskog rata.
+
+                                Tunel Grič projektiran je 1943. godine za vrijeme Nezavisne Države Hrvatske, kada su počela saveznička bombardiranja, a dovršen je 1945. godine. Nakon II. svjetskog rata godinama su tunelu pokušavali dati neku funkciju: od garaže do atomskog skloništa, ali ništa od toga nije prošlo. Tek je 2009. odlučeno da će od njega napraviti Muzej dodira prema ideji Nede Cilinger, iako ideja još nije zaživjela.
+                                
+                                Osim tunela Grič, postoji i tunel koji povezuje Tkalčićevu ulicu i Tuškanac kod Dubravkina puta, a u početku Domovinskog rata u njemu se nalazio Glavni stožer OS RH.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+
+        <div class="modal" id="pmf">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Botanički vrt PMF</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="col-lg-12">
+                            <img src="http://www.jetset-magazin.com/wp-content/uploads/2015/10/bot1-563x353.jpg" class="centriraj"alt="#">
+                            <p class="tekst">
+                                Botanički vrt je u vrijeme osnutka 1889. godine zajedno s Botaničko-fiziološkim zavodom pripadao Matematičko-prirodoslovnom odjelu Mudroslovnog (Filozofskog) fakulteta , a od 1946., zajedno s Botaničkim zavodom u sklopu Biološkog odjela, postaje dio Prirodoslovno-matematičkog fakulteta, koji je osnovan te godine.
+
+                            Zbog svoje velike obrazovne, kulturno-povijesne i turističke vrijednosti, te sveukupnog značenja za grad Zagreb i Republiku Hrvatsku, Botanički vrt PMF-a je od 1971. godine zakonom zaštićen kao spomenik prirode i kulture (spomenik vrtne arhitekture).
+
+                            Vrt vode četiri stručna suradnika botaničara, a njeguje ga 7 vrtlara i pomoćno osoblje.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+
+        <div class="modal" id="mimar">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Muzej mimara</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="col-lg-12">
+                            <img src="https://www.infozagreb.hr/media/places/large_1@275@5cb83fa1226fc.jpg" class="centriraj"alt="#">
+                            <p class="tekst">Muzej Mimara nastao je donacijom svjetski poznatog skupljača umjetnina Ante Topića Mimare i njegove supruge Wiltrude Mimare koji je otvoren za javnost 1987. godine na Rooseveltovom trgu u Zagrebu. Puno je ime muzeja: Javna ustanova "Zbirka umjetnina Ante i Wiltrude Topić Mimara", ali statut muzeja dopušta uporabu kraćeg oblika imena: Muzej Mimara.  Ondje se nalazi više od 3.750 umjetnina velike raznolikosti i iznimne umjetničke vrijednosti, od antike i staroegipatskih predmeta do slika velikih majstora - Raffaella, Velasqueza, Rubensa i Rembrandta. Danas je Mimara glavni zagrebački muzej. Zbirka stakla izuzetna je cjelina umjetničkih vrijednosti staklarskog obrta. Kroz više od 300 izloženih primjeraka prati razvojni put o drevnog Egipta i Rimskog Carstva do poznatih venecijanskih i drugih europskih radionica. Zbirka umjetnina Dalekog Istoka sadrži predmete od rijetkih materijala poput žada, laka i roga nosoroga. Muzej posjeduje bogatu stručnu knjižnicu s 5400 naslova. Stalni postav oblikovan kao kronološko nizanje povijesno-stilskih razdoblja. Redovito se organiziraju tematske i studijske izložbe, te ekspertize i povremene edukativne igraonice / radionice. 
+
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+
+        <div class="modal" id="vrt">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Zoološki vrt</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="col-lg-12">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Maksimir_Zoo.jpg/220px-Maksimir_Zoo.jpg" class="centriraj"alt="#">
+                            <p class="tekst">Zoološki vrt grada Zagreba je jedan od 3 zoološka vrta u Hrvatskoj. Prostire se na površini od 7 hektara, a smješten je u južnom dijelu parka Maksimira. Ima 275 vrsta životinja i 2 225 jedinki sa gotovo svih kontinenata. Zastupljeni su sisavci, ptice, gmazovi, vodozemci, ribe i beskralježnjaci.
+
+                                Zagrebački zoo-vrt član je sljedećih međunarodnih organizacija, čime je priznata njegova kvaliteta: Europskog udruženja zoo-vrtova i akvarija (EAZA - European Association of Zoos and Aquaria), Svjetskog udruženja zoo-vrtova i akvarija (WAZA - World Association of Zoos and Aquariums), Međunarodnog udruženja zoo edukatora (IZE - International Zoo Educators Association) i Međunarodnog informacijskog sustava o životinjama u zatočeništvu (ISIS - International Species Information System).
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+
+        <div class="modal" id="muzej">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Muzej Grada Zagreba</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="col-lg-12">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Muzej_grada_Zagreba.jpg/800px-Muzej_grada_Zagreba.jpg" class="centriraj"alt="#">
+                            <p class="tekst">Muzej grada Zagreba osnovan je odlukom Gradskog poglavarstva 1907. godine. Inicijator osnivanja muzeja i arhiva bila je Družba "Braća Hrvatskoga Zmaja". Smješten je u obnovljenom spomeničkom kompleksu bivšeg samostana Klarisa iz 1650. godine, na zagrebačkom Gornjem gradu. Muzej obrađuje teme iz kulturne, umjetničke, ekonomske i političke povijesti grada u kontinuitetu od rimskih nalaza pa sve do modernog doba. Fundus čini 75 000 predmeta sistematiziranih u zbirke umjetničkih i uporabnih predmeta karakterističnih za grad i njegovu povijest.
+
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+
+        <div class="modal" id="muzej2">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Muzej za umjetnost i obrt</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="col-lg-12">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Museum_of_Arts_and_Crafts%2C_Zagreb.jpg" class="centriraj"alt="#">
+                            <p class="tekst">
+                                Muzej za umjetnost i obrt osnovan je 17. veljače 1880. godine, na inicijativu Društva umjetnosti i njegovog tadašnjeg predsjednika Izidora Kršnjavija kao jedna od prvih institucija takve vrste u Europi. Muzej se nalazi na zagrebačkom Trgu Republike Hrvatske, nasuprot Hrvatskog narodnog kazališta.
+
+S osloncem na teoretske postavke pokreta Arts & Crafts u Engleskoj, te idejne postulate Gottfrieda Sempera, Muzej je zamišljen s namjerom da se stvori “zbirka uzoraka za majstore obrtnike i umjetnike koji treba da ponovo unaprijede proizvodnju predmeta svakodnevne upotrebe”. Međutim, na ovoj idejnoj osnovi Kršnjavi ne stvara temelje “obrtnom muzeju”, već ovu instituciju koncipira mnogo progresivnije, otvarajući sintagmom umjetnost i obrt mogućnost šireg područja njezina budućeg djelovanja. Strategija djelovanja Muzeja bila je usmjerena ka očuvanju tradicionalnih vrijednosti narodnog obrta, ali i stvaranju nove estetičke kulture građanskog sloja, te je 1882. godine uz Muzej osnovana i Obrtna škola, današnja Škola za primijenjenu umjetnost i dizajn.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+
+        <div class="modal" id="muzej3">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Arheološki muzej</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="col-lg-12">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Arheolo%C5%A1ki_muzej_Zagreb.jpg/800px-Arheolo%C5%A1ki_muzej_Zagreb.jpg" class="centriraj"alt="#">
+                            <p class="tekst">Muzejski fundus sistematiziran je u zbirkama: pretpovijesna, antička (grčki i rimski spomenici) i ranosrednjovjekovna zbirka. Muzej posjeduje i egipatsku zbirku, jedinu takve vrste u ovim prostorima, kao i numizmatičku zbirku, jednu od najvećih takvih zbirki u Europi i svijetu. Stalni postav muzeja sastoji se od stalnog postava pretpovijesne i egipatske zbirke; uvodnoga dijela stalnog postava antičke zbirke: grčke vaze, spomenici grčke kolonizacije istočne obale Jadrana i rimska vojna oprema te stalnog postava numizmatičke zbirke, a u sklopu muzeja nalazi se i Lapidarij.
+
+                                Muzej posjeduje i jedinstvenu kolekciju etruščanskih spomenika. Najpoznatiji i svakako najdragocjeniji je glasovita Zagrebačka lanena knjiga (Liber linteus Zagrabiensis), rukopis s najdužim sačuvanim tekstom etruščanskog jezika i jedini očuvani primjerak lanene knjige u čitavom antičkom svijetu, zajedno sa zagrebačkom mumijom.
+                                
+                                Muzej vodi brigu o arheološkom parku "Andautonija" u Šćitarjevu, gdje su sačuvani ostaci antičkog grada iz vremena od 1. do 4. stoljeća.
+
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+  </body>
+</html>

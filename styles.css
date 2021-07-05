@@ -1,0 +1,110 @@
+body{
+    background-image: url("https://www.amadriapark.com/hr/wp-content/uploads/sites/4/2018/08/home-page-slider_bg_zagreb.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#logo{
+    height: 30px;
+}
+nav{
+    padding-left: 8em;
+    padding-right: 8em;
+}
+#kont{
+    margin-top: 10rem;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    
+}
+#naslov{
+    font-size: 50px;
+    text-shadow: 1px 1px black;
+}
+#okviri{
+    text-align: center;
+    background-color: cornsilk;
+    
+    
+}
+#slika{
+    position: relative;
+    text-align: center;
+    margin-top: 1rem;
+    
+}
+
+#slika2{
+    display: none;
+    position: relative;
+    text-align: center;
+    margin-top: 1rem;
+}
+.img-thumbnail:hover{
+    filter: blur(2px);
+    transform: scale(1.05)
+}
+.centered {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 20px;
+    background-color:#506477;
+    border-radius: 5px;
+    color:white;
+}
+img:hover + .centered{
+    display: block;
+}
+.img-thumbnail{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    object-fit: fill;
+}
+.pagination{
+    text-align: center;
+    justify-content: center;
+}
+.tekst{
+    margin-top: 1rem;
+    text-align: justify;
+}
+.centriraj{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.card{
+    display: block;
+    margin-right: 10rem;
+    margin-left: 10rem;
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+}
+#slajd{
+    background-size: cover;
+}
+.card-body{
+    background-size: cover;
+}
+.hist{
+    padding: 1em;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+.table{
+    text-align: left;
+    padding: 1rem;
+}
+#red:hover{
+    background-color: darkgray;
+}

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Znamenitosti Zagreba</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand -->
+        <ul class="navbar-nav" href="#">
+            <li class="nav-item">
+                <a href="index.html">
+                <img src="https://seeklogo.com/images/G/Grad_Zagreb-logo-C938C47B15-seeklogo.com.png" id="logo">
+                </a>
+            </li>
+        </ul>
+    
+      
+        <!-- Links -->
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="znamenitosti.html">Znamenitosti</a>
+            </li>
+                <li class="nav-item">
+                <a class="nav-link" href="povijest.html">Povijest</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="zanimljivosti.html">Zanimljivosti</a>
+            </li>
+        
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Više
+                </a>
+                <div class="dropdown-menu">
+                <a class="dropdown-item" href="https://www.google.com/maps?q=zagreb+maps&um=1&ie=UTF-8&sa=X&ved=2ahUKEwi_q5XmysbxAhU6gf0HHR_MCvQQ_AUoAXoECAEQAw">Karta</a>
+                <a class="dropdown-item" href="http://www.mgz.hr/hr/">Muzeji</a>
+                <a class="dropdown-item" href="https://hr.wikipedia.org/wiki/Zagreb">Wikipedija</a>
+                </div>
+            </li>
+        </ul>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                          <li data-target="#demo" data-slide-to="0" class="active"></li>
+                          <li data-target="#demo" data-slide-to="1"></li>
+                          <li data-target="#demo" data-slide-to="2"></li>
+                        </ul>
+                      
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                
+                                <div class="card" >
+                                    <div class="card-header"><h1>Katedrala</h1></div>
+                                    <div class="card-body"><img class="card-img-top" src="https://www.rutmap.com/look/images/gallery/20181011224401-kat1.jpg" alt="Chicago"></div>
+                                    <div class="card-footer">Većina Zagrepčana zna koja je najviša građevina njihova grada. To je, naravno, Zagrebačka katedrala sa svojih 108 metara visine.
+
+                                        No jeste li znali da je tehnički gledano zapravo Zagrepčanka najviša građevina u gradu? Na koji način? Zbog velike antene koja se nalazi na njezinu vrhu, a s kojom zgrada doseže čak 110 metara u visinu.</div>
+                                </div>
+                                       
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card" >
+                                    <div class="card-header"><h1>Najkraća ulica</h1></div>
+                                    <div class="card-body"><img class="card-img-top"src="https://arhiv-www.hrt.hr/media/tt_news/novodovrksa-ulica2.jpg" alt="Chicago"></div>
+                                    <div class="card-footer">Najkraća ulica u Zagrebu jest Novodvorska ulica. Za prelazak ove ulice cijelom njenom dužinom dovoljna su svega dvadeset i dva koraka. Ova ulica nalazi se u zagrebačkom kvartu Trešnjevka, a sastoji se od čak dvije kuće i jedne zgrade s uličnim brojevima 2, 3 i 5.</div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-header"><h1>Kip Jelačića</h1></div>
+                                    <div class="card-body"><img class="card-img-top" src="https://www.zagreb.info/wp-content/uploads/2017/07/Ritam-grada-02-e1500389485443.jpg" alt="Chicago"></div>
+                                    <div class="card-footer">Jedan od najpoznatijih simbola grada Zagreba, kip bana Josipa Jelačića. na istoimenom trgu postavljen je 1866. godine tako da gleda prema sjeveru. No to se kasnije promijenilo i odlučeno je da će kip gledati prema jugu, kao što je danas i slučaj.</div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-header"><h1>Jelačićev konj</h1></div>
+                                    <div class="card-body"><img class="card-img-top" src="https://express.24sata.hr/media/img/2a/7f/b84869f9ba2bc30713e7.png" alt="Chicago"></div>
+                                    <div class="card-footer">
+                                        Nastavno na našeg bana na trgu, svi znamo da on tamo sjedi na svom konju, no manje je poznato ime konja. Naime, konj se zove Emir, a na njemu je Jelačić dojahao u Zagreb na svoje ustoličenje. 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-header"><h1>Basričekova ulica</h1></div>
+                                    <div class="card-body"><img class="card-img-top" src="http://licegrada.hr/wp-content/uploads/2016/07/Gornji-grad-130316-ZG-255.jpg" alt="Chicago"></div>
+                                    <div class="card-footer">
+                                        Zagrepčani u pivu uživaju već od 14. stoljeća kada su ga prvi puta u današnjoj prijestolnici počeli proizvoditi njihovi sugrađani njemačkog podrijetla.
+
+A prvo pivo se pilo upravo u današnjoj Basaričekovoj ulici na Gornjem Gradu. U to vrijeme, ulica se i prigodno zvala Pivarska ulica.  Prva prava pivovara u današnjem smislu te riječi otvara se tek 1879. 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-header"><h1>Lusteri Zagrebačke katedrale</h1></div>
+                                    <div class="card-body"><img class="card-img-top" src="https://www.vecernji.hr/media/img/45/e4/e491c882c4bb656f887d.jpeg" alt="Chicago"></div>
+                                    <div class="card-footer">
+                                        Tri glavna velika lustera u Zagrebačkoj katedrali došla su iz dalekih Sjedinjenih Američkih Država. Ovi pozlaćeni lusteri poklon su hrvatskog iseljenika Stefana Stankića, a poslao ih je za Zagreb iz kockarnice Gold Coast u Las Vegasu
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-header"><h1>Oscar</h1></div>
+                                    <div class="card-body"><img class="card-img-top" src="https://phantom-marca.unidadeditorial.es/b15b0ca1660a861562619fdba7922e24/resize/1320/f/jpg/assets/multimedia/imagenes/2021/04/25/16193837891265.jpg" alt="Chicago"></div>
+                                    <div class="card-footer">
+                                        U Muzeju grada Zagreba može se pronaći jedan vrlo poznati i vrijedni zlatni kipić imena Oscar, ali naravno, samo njegova replika. 
+
+Svima nam je poznata nagrada Oscar koja se u Americi godišnje dodjeljuje za najveća filmska postignuća, a jedan takav osvojio je i naš Dušan Vukotić za svoj animirani film Surogat. Bio je to prvi Oscar ikada dodijeljen redatelju animiranih filmova koji nije Amerikanac.
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </a>
+                      
+                      </div>
+                </div>
+            </div>
+        </div>
+        
+
+  </body>
+</html>
